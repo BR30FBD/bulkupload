@@ -58,6 +58,7 @@ app.post('/', upload.single('file'), (req, res, next) => {
 mongoose.connect('mongodb://localhost:27017/bulkupload',
   { useUnifiedTopology: true }, err => {
     console.log('Connected to database!')
+
   });
 app.listen('3000' || process.env.PORT, err => {
   if (err)
